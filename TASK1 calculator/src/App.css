@@ -1,0 +1,94 @@
+.calculator {
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid #97c3ff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  background-color: #97c3ff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.result {
+  margin-top: 5px;
+  font-size: 24px;
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #ffe1b8;
+}
+
+button.operator {
+  background-color: #ffa6de;
+  color: #fff;
+}
+button.equals {
+  background-color: #affc88;
+  color: #000;
+}
+button.clear {
+  background-color: #fc8888;
+  color: #000;
+}
+button.backspace {
+  background-color: #ffbbbb;
+  color: #000;
+}
+
+button.double {
+  grid-column: span 2;
+}
+
+button.triple {
+  grid-column: span 3;
+}
+
+button.square-root {
+  background-color: #bb88ff;
+  color: #fff;
+}
+
+button.square {
+  background-color: #bb88ff;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:active {
+  background-color: #ccc;
+}
+
